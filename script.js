@@ -17,6 +17,12 @@ for (let i = 0; i < countKubiks / 2; i++) {
 
 arrayKubiks = [...arrayKubiks, ...arrayKubiks];
 
+function makeRandomArr(a, b) {
+    return Math.random() - 0.5;
+}
+
+arrayKubiks.sort(makeRandomArr);
+
 
 function renderKubiks(arrayKubiks) {
     arrayKubiks.map((kubik, index) => {
